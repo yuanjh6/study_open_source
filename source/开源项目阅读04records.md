@@ -2,7 +2,9 @@
 
 ## 基础
 只需要输入sql语句就可以把结果包成对象返回，极大的方便了用户（这个应该是早期结论，目前大多数开发框架都会集成ORM框，一样很方便，所以实用角度看，意义不大，抱着学习的态度看一看即可）
+
 借助项目（基于以下项目封装）：
+
 ```
 sqlalchemy：python的ORM框架
 tablib：kennethreitz的另一个项目，主要是把数据处理为XLS, CSV, JSON, YAML格式返回。
@@ -16,8 +18,11 @@ tablib：kennethreitz的另一个项目，主要是把数据处理为XLS, CSV, J
 
 ## 广度阅读
 ![](_v_images/20200718125140407_2097713960.png)
+
 Record储存每条数据的详情；RecordCollection储存query的查找结果，也就是Record的集合；Database数据库的操作集合。
+
 形象的来说：RecordCollection就是拉皮条的，手里有很多的Record，来源自Database，客户就是我们。。。。
+
 ```
 
 class Record(object):
@@ -50,8 +55,11 @@ def all(self, as_dict=False, as_ordereddict=False):
 
 
 
+
 ## 评价
 较好的利用了python的魔法方法特性，这也是python明显不同java等语言的地方，等价于对运算符的重载。
 
+
 ## 参考
 python库学习：records库源码分析：https://zhuanlan.zhihu.com/p/52605543
+
