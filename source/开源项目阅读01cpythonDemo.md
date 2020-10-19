@@ -1,7 +1,6 @@
 # 开源项目阅读01cpythonDemo
 ## beer
 地址:https://github.com/python/cpython/blob/master/Tools/demo/beer.py
-
 ```
 n = 100
 if sys.argv[1:]:
